@@ -1,4 +1,3 @@
-
 <table class="table-fixed min-w-full border border-gray-300 divide-y divide-slate-100 dark:divide-slate-700 data-table capitalize" border="2">
     <thead class="bg-slate-200 dark:bg-slate-700">
         <tr>
