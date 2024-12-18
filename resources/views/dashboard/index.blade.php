@@ -1,5 +1,5 @@
 @extends('dashboard/layouts/main')
 
 @section('container_content')
-    @include('components.stepper.stepper')
+    @include('dashboard.layouts.templateContent')
 @endsection

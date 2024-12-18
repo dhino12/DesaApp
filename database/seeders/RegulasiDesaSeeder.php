@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class DashboardFormPemDesaSeeder extends Seeder
+class RegulasiDesa extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,5 @@ class DashboardFormPemDesaSeeder extends Seeder
      */
     public function run()
     {
-        //
     }
 }

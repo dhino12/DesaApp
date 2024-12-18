@@ -9102,19 +9102,23 @@ ToolTip And PopOver
 }
 
 .btn-outline-primary{
-  border-width: 1px;
+  border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(70 105 250 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(70 105 250 / var(--tw-text-opacity));
+  box-shadow: 2px 2px 0px blue;
 }
 
 .btn-outline-primary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(70 105 250 / var(--tw-border-opacity));
-  background-color: rgb(70 105 250 / var(--tw-bg-opacity));
+  background-color: rgb(37 99 235);
+  color: white;
   --tw-bg-opacity: 0.05;
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px blue;
 }
 
 .btn-outline-primary .active{
@@ -10777,7 +10781,7 @@ ul.custom-list ul li{
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
@@ -10809,7 +10813,15 @@ ul.custom-list ul li{
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
-
+table{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #a9a9a9;
+}
+th, td {
+  border: 2px solid #a9a9a9;
+}
 .dark .table-td{
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));

@@ -13,7 +13,7 @@ class CreateProvinsiTable extends Migration
      */
     public function up()
     {
-        Schema::create('provinsi', function (Blueprint $table) {
+        Schema::create('provinsis', function (Blueprint $table) {
             $table->string("kode_provinsi")->primary()->unique();
             $table->string("name_provinsi");
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateProvinsiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('provinsi');
+        Schema::dropIfExists('provinsis');
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IndikatorPengelolaanDesaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,4 @@ Route::get('/dashboard', function () {
     return view('dashboard.index');
 });
 
-Route::get("/dashboard/form-indikator-desa", function() {
-    return view("dashboard.indikator-pengelolaan-desa");
-});
+Route::resource("/dashboard/form-indikator-desa", IndikatorPengelolaanDesaController::class);

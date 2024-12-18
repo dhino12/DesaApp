@@ -14,10 +14,10 @@ class CreateDesaProfileTable extends Migration
      */
     public function up()
     {
-        Schema::create('desa_profile', function (Blueprint $table) {
+        Schema::create('desa_profiles', function (Blueprint $table) {
             $table->id("id_dataDesa");
             $table->string('kode_provinsi');
-            $table->foreign('kode_provinsi')->references('kode_provinsi')->on('provinsi');
+            $table->foreign('kode_provinsi')->references('kode_provinsi')->on('provinsis');
             $table->integer("jumlah_desa");
             $table->integer("jumlah_rt");
             $table->integer("jumlah_rw");
@@ -37,6 +37,6 @@ class CreateDesaProfileTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('desa_profile');
+        Schema::dropIfExists('desa_profiles');
     }
 }

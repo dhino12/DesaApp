@@ -13,10 +13,10 @@ class CreateRegulasiDesaTable extends Migration
      */
     public function up()
     {
-        Schema::create('regulasi_desa', function (Blueprint $table) {
+        Schema::create('regulasi_desas', function (Blueprint $table) {
             $table->id()->index();
             $table->string('kode_provinsi')->unique();
-            $table->foreign('kode_provinsi')->references('kode_provinsi')->on('provinsi');
+            $table->foreign('kode_provinsi')->references('kode_provinsi')->on('provinsis');
             $table->integer("jumlah_peraturan_desa");
             $table->integer("jumlah_peraturan_kepala_desa");
             $table->integer("jumlah_peraturan_bersama_kepala_desa");

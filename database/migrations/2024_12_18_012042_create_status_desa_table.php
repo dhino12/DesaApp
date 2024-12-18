@@ -13,10 +13,10 @@ class CreateStatusDesaTable extends Migration
      */
     public function up()
     {
-        Schema::create('status_desa', function (Blueprint $table) {
+        Schema::create('status_desas', function (Blueprint $table) {
             $table->id();
             $table->string('kode_provinsi')->unique();
-            $table->foreign('kode_provinsi')->references('kode_provinsi')->on('provinsi');
+            $table->foreign('kode_provinsi')->references('kode_provinsi')->on('provinsis');
             $table->integer("jumlah_desa_swadaya");
             $table->integer("jumlah_desa_swakarya");
             $table->integer("jumlah_desa_swasembada");
