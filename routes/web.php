@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('test');
+    return "go to /dashboard/form-indikator-desa";
 });
 
 Route::get('/dashboard', function () {

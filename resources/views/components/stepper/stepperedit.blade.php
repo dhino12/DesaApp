@@ -74,7 +74,6 @@
                 </div>
             </div>
         @endif
-
         <form action="/dashboard/form-indikator-desa" method="post">
         @csrf
 		<div class="max-w-3xl mx-auto px-4 py-10">
@@ -137,12 +136,12 @@
                             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
                                 <div class="lg:col-span-3 md:col-span-2 col-span-1">
                                     <h4 class="text-base text-slate-800 dark:text-slate-300 my-6">Masukan data yang dibutukan form 🙏</h4>
-                                    <select name="kode_provinsi" id="select2basic" class="select2 form-control w-full mt-2 py-2">
+                                    {{-- <select name="kode_provinsi" id="select2basic" class="select2 form-control w-full mt-2 py-2">
                                         <option selected="Selected" disabled="disabled" value="" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Select an option</option>
                                         @foreach ($provinces as $provinsi)
-                                            <option value="{{ $provinsi->kode_provinsi }}" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">{{ $provinsi->kode_provinsi }} - {{ $provinsi->name_provinsi }}</option>
+                                            <option value="{{ $provinsi->kode_provinsi ?? '' }}" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">{{ $provinsi->kode_provinsi }} - {{ $provinsi->name_provinsi }}</option>
                                         @endforeach
-                                    </select>
+                                    </select> --}}
                                     {{-- <input id="indikator" type="number" class="form-control" placeholder="kode provinsi" name="kode_provinsi" value="11" readonly> --}}
                                 </div>
                                 <div class="input-area">

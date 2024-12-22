@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\IndikatorDesa;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -13,7 +13,10 @@ class StatusDesaFactory extends Factory
      */
     public function definition()
     {
+        $length = 15; // Panjang angka random
+        $randomNumber = str_pad(mt_rand(0, pow(10, $length) - 1), $length, '0', STR_PAD_LEFT);
         return [
+            "id" => $randomNumber,
             "kode_provinsi" => strval(mt_rand(12,19)),
             "jumlah_desa_swadaya" => mt_rand(1,4),
             "jumlah_desa_swakarya" => mt_rand(1,4),

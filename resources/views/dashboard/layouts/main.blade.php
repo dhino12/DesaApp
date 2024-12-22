@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <title>Dashcode - HTML Template</title>
+    <title>Development - Lorem ipsum </title>
     <link rel="icon" type="image/png" href="/images/logo/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- BEGIN: Theme CSS-->
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
     <link rel="stylesheet" href="/css/rt-plugins.css">
     <link rel="stylesheet" href="/css/app.css">
     <!-- End : Theme CSS-->

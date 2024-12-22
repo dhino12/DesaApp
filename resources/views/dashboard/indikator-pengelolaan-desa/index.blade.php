@@ -185,16 +185,24 @@
                             </span>
                         </button>
                     </a>
+                    @if(session()->has('success'))
+                    <div class="py-[18px] mt-5 px-6 font-normal text-sm rounded-md bg-success-500 text-white">
+                        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                            <iconify-icon class="text-2xl flex-0" icon="system-uicons:target"></iconify-icon>
+                            <p class="flex-1 font-Inter">
+                                {!! session('success') !!}
+                            </p>
+                            <div class="flex-0 text-xl cursor-pointer">
+                                <iconify-icon icon="line-md:close"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
                     <div class="overflow-x-auto -mx-6">
                         <div class="inline-block min-w-full align-middle">
                             <div class="overflow-hidden ">
                                 @include('components.tab.tab', ['indicators' => $indicators, 'columns' => $columns])
-                                {{-- @extends('components/tab/tab') --}}
-                                {{-- @section('tab-content-1')
-                                @endsection
-                                @section('tab-content-2')
-                                    <h1>Hello Tab Content 2</h1>
-                                @endsection --}}
+                                
                             </div>
                         </div>
                     </div>

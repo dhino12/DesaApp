@@ -1160,11 +1160,11 @@
 
                                 <div class="relative">
                                     <button class="text-slate-800 dark:text-white focus:ring-0 focus inline-flex items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <iconify-icon icon="circle-flags:uk" class="mr-0 md:mr-2 rtl:ml-2 text-xl">
+                                        <iconify-icon icon="circle-flags:id" class="mr-0 md:mr-2 rtl:ml-2 text-xl">
                                         </iconify-icon>
                                         <span
                                             class="text-sm md:block hidden font-medium text-slate-600 dark:text-slate-300">
-                                            En</span>
+                                            ID</span>
                                     </button>
                                     <!-- Language Dropdown menu -->
                                     <div class="dropdown-menu z-10 hidden bg-white divide-y divide-slate-100 shadow w-44 dark:bg-slate-800 border dark:border-slate-900 !top-[25px] rounded-md overflow-hidden">
@@ -1172,9 +1172,9 @@
                                             <li>
                                                 <a href="#"
                                                     class="flex items-center px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
-                                                    <iconify-icon icon="circle-flags:uk"
+                                                    <iconify-icon icon="circle-flags:id"
                                                         class="ltr:mr-2 rtl:ml-2 text-xl"></iconify-icon>
-                                                    <span class="font-medium">ENG</span>
+                                                    <span class="font-medium">ID</span>
                                                 </a>
                                             </li>
                                             <li>
@@ -1437,8 +1437,7 @@
                                                 class="block w-full h-full object-cover rounded-full">
                                         </div>
                                         <span
-                                            class="flex-none text-slate-600 dark:text-white text-sm font-normal items-center lg:flex hidden overflow-hidden text-ellipsis whitespace-nowrap">Albert
-                                            Flores</span>
+                                            class="flex-none text-slate-600 dark:text-white text-sm font-normal items-center lg:flex hidden overflow-hidden text-ellipsis whitespace-nowrap">Joko Hendoko</span>
                                         <svg class="w-[16px] h-[16px] dark:text-white hidden lg:inline-block text-base inline-block ml-[10px] rtl:mr-[10px]"
                                             aria-hidden="true" fill="none" stroke="currentColor" viewbox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg">

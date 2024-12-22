@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateKelembagaanAparatur extends Migration
@@ -15,7 +16,7 @@ class CreateKelembagaanAparatur extends Migration
     {
         Schema::create('kelembagaan_aparaturs', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_provinsi')->unique();
+            $table->string('kode_provinsi')->index('kode_provinsi');
             $table->foreign('kode_provinsi')->references('kode_provinsi')->on('provinsis');
             $table->integer("jumlah_anggota_bpd");
             $table->integer("jumlah_anggota_bpd_perempuan");
@@ -24,7 +25,7 @@ class CreateKelembagaanAparatur extends Migration
             $table->integer("jumlah_desa_menetapkan_kepengurusan_posyandu");
             $table->integer("jumlah_aparatur_desa_pelatihan_kapasitas");
             $table->integer("jumlah_desa_aktif_pkk");
-            $table->timestamps();
+            $table->timestamps(3);
         });
     }
 

@@ -57,9 +57,9 @@ class DatabaseSeeder extends Seeder
             "name_provinsi" => "Kepulauan Bangka Belitung"
         ]);
         DesaProfile::factory(3)->create();
-        StatusDesa::factory(2)->create();
-        RegulasiDesa::factory(2)->create();
-        PenghargaanDesa::factory(2)->create();
-        KelembagaanAparatur::factory(2)->create();
+        StatusDesa::factory(3)->create();
+        RegulasiDesa::factory(3)->create();
+        PenghargaanDesa::factory(3)->create();
+        KelembagaanAparatur::factory(3)->create();
     }
 }

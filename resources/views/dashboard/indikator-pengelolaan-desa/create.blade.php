@@ -1,5 +1,5 @@
 @extends('dashboard/layouts/main')
 
 @section('container_content')
-    @include('components.stepper.stepper')
+    @include('components.stepper.stepper', [ 'provinces' => $provinces])
 @endsection

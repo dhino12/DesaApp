@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
@@ -1014,6 +1017,13 @@ textarea.form-control.is-invalid{
   height: auto;
   -webkit-transition: width 0.35s ease;
   transition: width 0.35s ease;
+}
+.table-th.sticky,
+.table-td.sticky {
+    position: sticky;
+    right: 0;
+    background-color: inherit; /* Memastikan latar belakang sesuai */
+    z-index: 10; /* Pastikan elemen tetap di atas elemen lainnya */
 }
 .dropdown-menu{
   z-index: 1000;
@@ -6565,6 +6575,10 @@ textarea.form-control.is-invalid{
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
 }
+.\!px-2{
+  padding-left: 0.45rem !important;
+  padding-right: 0.45rem !important;
+}
 .\!px-9{
   padding-left: 2.25rem !important;
   padding-right: 2.25rem !important;
@@ -6588,6 +6602,10 @@ textarea.form-control.is-invalid{
 .px-0\.5{
   padding-left: 0.125rem;
   padding-right: 0.125rem;
+}
+.\!px-0{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .px-0{
   padding-left: 0px;
@@ -6901,6 +6919,10 @@ textarea.form-control.is-invalid{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.\!text-sm{
+  font-size: 0.775rem !important; /* 14px */
+  line-height: 1.25rem !important; /* 20px */
 }
 .text-4xl{
   font-size: 2.25rem;
@@ -7312,6 +7334,10 @@ textarea.form-control.is-invalid{
 .text-green-600{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity, 1)) /* #22c55e */;
 }
 .text-\[rgb\(220\2c 76\2c 100\)\]{
   --tw-text-opacity: 1;
@@ -9534,14 +9560,16 @@ ToolTip And PopOver
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
+.w-72vh {
+  width: 72vh;
+}
 .form-control{
   display: block;
   width: 100%;
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+  border-color: rgb(168 174 183);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
@@ -10783,7 +10811,7 @@ ul.custom-list ul li{
   font-weight: 600;
   /* text-transform: uppercase; */
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
+  /* color: rgb(71 85 105 / var(--tw-text-opacity)); */
 }
 
 [dir="ltr"] .table-th{

@@ -36,7 +36,7 @@
                             class="nav-link block font-medium font-Inter text-sm leading-tight capitalize rounded-md px-6 py-3 focus:outline-none focus:ring-0 dark:bg-slate-900 dark:text-slate-300 "
                             id="pills-settings-tabHorizontal" data-bs-toggle="pill"
                             data-bs-target="#pills-penghargaanDesa" role="tab"
-                            aria-controls="pills-penghargaanDesa" aria-selected="false">Kelembagaan Aparatur</a>
+                            aria-controls="pills-penghargaanDesa" aria-selected="false">Penghargaan Desa</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContentHorizontal">
